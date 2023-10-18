@@ -3,14 +3,14 @@ body {
     background-color: #ffffff;
     margin: 0px;
     padding: 0px;
-    display: flex;
-    /* max-width: fit-content; */
+    /* display: flex; */
+    max-width: fit-content;
     width: 100%;
     font-size: 16px;
     /* font-size: 100%; */
-    /* display: -webkit-box;
+    display: -webkit-box;
     display: -ms-flexbox;
-    display:flex; */
+    display:flex;
 }
 
 .container{
@@ -34,7 +34,7 @@ body {
     background-color: #000000;
     color: #ffffff;
     padding: 20px;
-    display: flex;
+    display:block;
     flex-direction: column;
 }
 
@@ -148,12 +148,12 @@ section h2{
 .experience-item-details{
     /* font-size: 16px; */
     font-size: 0.7em;
-    font-weight: normal;
+    /* font-weight: normal; */
     color: #525252;
 }
 .experience-item-details ul{
     list-style-type:disc;
-    padding-inline-start: 40px;
+    padding-inline-start: 1.2em;
 }
 
 
@@ -230,13 +230,18 @@ progress::-webkit-progress-bar {
     align-self: flex-end;
 }
 
-@media (max-width: 575px) {
+@media screen and (max-width: 575px) {
     body{
+        display: block;
         font-size: 10px;
     }
     .container{
-        /* border: 1em; */
-        max-width: 575px;
+        max-width: 900px;
+        margin: 0 auto;
+
+        width: auto;
+        border: none;
+        /* max-width: 575px; */
         min-width: auto;
         display:block;
         flex: auto;
@@ -280,6 +285,12 @@ progress::-webkit-progress-bar {
 
         margin-left: 0px;
         margin-right: 0px;
+    }
+
+    progress {
+    
+
+        margin-left: 2vw;
     }
 
     .contact-container{
