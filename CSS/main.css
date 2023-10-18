@@ -6,8 +6,8 @@ body {
     display: flex;
     /* max-width: fit-content; */
     width: 100%;
-
-
+    font-size: 16px;
+    /* font-size: 100%; */
     /* display: -webkit-box;
     display: -ms-flexbox;
     display:flex; */
@@ -17,10 +17,10 @@ body {
     display: flex;
     max-width: 900px;
     margin: 0 auto;
-    border: 2px solid #000000;
+    border: 0.1em solid #000000;
 
     /* align-self:center; */
-    
+    font-size: 1em;
     /* flex: auto; */
     display: -webkit-box;
     display: -ms-flexbox;
@@ -29,6 +29,7 @@ body {
 
 
 .black-container {
+    font-size: 1em;
     min-width: min-content;
     background-color: #000000;
     color: #ffffff;
@@ -45,13 +46,16 @@ body {
     padding: 20px;
 }
 .person-initials h1{
-    font-size: 40px;
+    /* font-size: 40px; */
+    font-size: 2.5em;
+    /* font-size: 2.5em; */
     color: #ffffff;
     margin-block-start: 0;
     margin-block-end: 0;
 }
 .person-initials h2{
-    font-size: 35px;
+    /* font-size: 35px; */
+    font-size: 2em;
     margin-block-start: 0;
     margin-block-end: 0;
 }
@@ -60,22 +64,29 @@ body {
     
     max-width: 700px;
     min-width: 580px;
-    margin-left: 85px; 
-    padding-right: 10px;
+
 
     background-color: #ffffff;
     flex: auto;  
     margin-top: 4em;  
-    margin-bottom: 4em;    
-    margin-right: 100px;   
+    /* margin-bottom: 4em; */
+    margin-left: 85px; 
+    margin-right: 100px; 
+    /* padding-right: 10px;     */
+    
+      
 }
 
 
 section{
-    margin-block-end: 50px;
+    /* margin-block-end: 50px; */
+    margin-block-end: 4em;
+    font-size: 1em;
+    max-width: fit-content;
 }
-section>h2{
-    font-size: 25px;
+section h2{
+    /* font-size: 25px; */
+    font-size: 1.6em;
     font-weight: bolder;
 }
 
@@ -104,7 +115,8 @@ section>h2{
 
 .experience{
     max-width: auto;
-    font-size: 23px;
+    /* font-size: 23px; */
+    font-size: 1.5em;
 }
 .experience > ul{
     padding-inline-start: 20px;
@@ -114,22 +126,28 @@ section>h2{
     display: -ms-flexbox;
     display: flex;
     margin-bottom: 1em;
+    font-size: 1em;
 }
 .experience-item-year{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 0.9em;
     font-weight: bold;
-    width: 80px;
+    min-width: 2.5em;
 }
 .experience-item-name{
-    font-size: 20px;
+    
+    /* font-size: 20px; */
+    font-size: 0.9em;
     font-weight: bold;
 }
 .experience-item-company{
-    font-size: 20px;
+    /* font-size: 20px; */
+    font-size: 0.9em;
     font-weight: bold;
 }
 .experience-item-details{
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 0.7em;
     font-weight: normal;
     color: #525252;
 }
@@ -140,34 +158,47 @@ section>h2{
 
 
 .skills{
+    font-size: 1.5em;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-}
-.skills{
     margin-bottom: 10px;
+
+    display: flex;
+    flex-direction: column;
 }
+.skill {
+    font-size: 0.7em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.5em;
+}
+
+
 .skills-name div{
-    margin-bottom: 5px;
+    font-size: 0.7em;
+    
+    margin-bottom: 0.5em;
 }
-.progress-container{
+/* .progress-container{
     margin-left: 10px;
-}
+} */
 .progress-container progress{
-    margin-bottom: 5px;
-}
-.progress-container progress{
-    width: 200px;
-    height: 18px;
-    max-width: 200px;
     flex: 1;
+    width: 200px;
+    /* height: 18px; */
+    height: 0.8em;
+    margin-bottom: 0.1em;
+    max-width: 200px;
+    
     margin-right: 30px;
 }
 progress {
     
     border-radius: 10px;
     background-color: #ffffff;
-    margin-right: 10px;
+    margin-left: 1em;
 }
 progress::-webkit-progress-value {
     background-color: #0e0e0e;
@@ -190,7 +221,8 @@ progress::-webkit-progress-bar {
 }
 .contact-info h2{
     color: #ffffff;
-    font-size:40px;
+    /* font-size:40px; */
+    font-size: 2.2em;
 }
 .contact-container{
     background-color: #000000;
@@ -199,7 +231,11 @@ progress::-webkit-progress-bar {
 }
 
 @media (max-width: 575px) {
+    body{
+        font-size: 10px;
+    }
     .container{
+        /* border: 1em; */
         max-width: 575px;
         min-width: auto;
         display:block;
@@ -213,13 +249,13 @@ progress::-webkit-progress-bar {
         padding: 20px;
     }
     .person-initials h1{
-        font-size: 35px;
+        /* font-size: 35px; */
         color: #ffffff;
         margin-block-start: 0;
         margin-block-end: 0;
     }
     .person-initials h2{
-        font-size: 25px;
+        /* font-size: 25px; */
         margin-block-start: 0;
         margin-block-end: 0;
     }
@@ -233,12 +269,17 @@ progress::-webkit-progress-bar {
         font-size: auto;
 
     }
-    .white-container {
-        padding-left: 50px;  
-        max-width: 575px;
-        min-width: 400px;
+    .white-container { 
+        max-width: fit-content;
+        /* min-width: 400px; */
+        min-width:min-content;
         margin-top: 2em;
-        margin-bottom: 0em;
+        /* margin-bottom: 0em; */
+        padding-left: 30px;
+        padding-right: 30px;
+
+        margin-left: 0px;
+        margin-right: 0px;
     }
 
     .contact-container{
@@ -253,7 +294,7 @@ progress::-webkit-progress-bar {
     }
 
     .contact-info h2{
-        font-size: 25px;
+        /* font-size: 25px; */
         margin-block-start: 0;
         margin-block-end: 8px;
     }
