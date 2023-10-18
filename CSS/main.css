@@ -1,0 +1,264 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #ffffff;
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    /* max-width: fit-content; */
+    width: 100%;
+
+
+    /* display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex; */
+}
+
+.container{
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto;
+    border: 2px solid #000000;
+
+    /* align-self:center; */
+    
+    /* flex: auto; */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display:flex;
+}
+
+
+.black-container {
+    min-width: min-content;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+.person-initials{
+    background-color: #000000;            
+    text-align: right;
+    writing-mode: vertical-rl;
+    transform: rotate(180deg);
+    padding: 20px;
+}
+.person-initials h1{
+    font-size: 40px;
+    color: #ffffff;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+.person-initials h2{
+    font-size: 35px;
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+.white-container {
+    
+    max-width: 700px;
+    min-width: 580px;
+    margin-left: 85px; 
+    padding-right: 10px;
+
+    background-color: #ffffff;
+    flex: auto;  
+    margin-top: 4em;  
+    margin-bottom: 4em;    
+    margin-right: 100px;   
+}
+
+
+section{
+    margin-block-end: 50px;
+}
+section>h2{
+    font-size: 25px;
+    font-weight: bolder;
+}
+
+
+.about_me{
+    max-width: auto;
+}
+.about_me-details{
+    color: #525252;
+}
+
+
+.education{
+    max-width: auto;
+    margin-left: 0;
+    /* font-size: 23px; */
+}
+.education h3{
+    
+    margin-block-end: 10px;
+}
+.education-details{
+    color: #525252;
+}
+
+
+.experience{
+    max-width: auto;
+    font-size: 23px;
+}
+.experience > ul{
+    padding-inline-start: 20px;
+}
+.experience-item{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 1em;
+}
+.experience-item-year{
+    font-size: 20px;
+    font-weight: bold;
+    width: 80px;
+}
+.experience-item-name{
+    font-size: 20px;
+    font-weight: bold;
+}
+.experience-item-company{
+    font-size: 20px;
+    font-weight: bold;
+}
+.experience-item-details{
+    font-size: 16px;
+    font-weight: normal;
+    color: #525252;
+}
+.experience-item-details ul{
+    list-style-type:disc;
+    padding-inline-start: 40px;
+}
+
+
+.skills{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.skills{
+    margin-bottom: 10px;
+}
+.skills-name div{
+    margin-bottom: 5px;
+}
+.progress-container{
+    margin-left: 10px;
+}
+.progress-container progress{
+    margin-bottom: 5px;
+}
+.progress-container progress{
+    width: 200px;
+    height: 18px;
+    max-width: 200px;
+    flex: 1;
+    margin-right: 30px;
+}
+progress {
+    
+    border-radius: 10px;
+    background-color: #ffffff;
+    margin-right: 10px;
+}
+progress::-webkit-progress-value {
+    background-color: #0e0e0e;
+    border-bottom-right-radius:   5px;
+    border-top-right-radius:  5px;
+}
+progress::-webkit-progress-bar {
+    background-color: rgb(221, 221, 221);
+    border: 1px solid #000000;
+    border-radius: 5px;
+}
+
+.contact-info{
+    padding: 10px;
+    background-color: #000000;
+    color:lightgrey;
+}
+.contact-info-details{
+    text-align: left;
+}
+.contact-info h2{
+    color: #ffffff;
+    font-size:40px;
+}
+.contact-container{
+    background-color: #000000;
+    position: absolute;
+    align-self: flex-end;
+}
+
+@media (max-width: 575px) {
+    .container{
+        max-width: 575px;
+        min-width: auto;
+        display:block;
+        flex: auto;
+    }
+    .person-initials{
+        background-color: #000000;
+        text-align: left;
+        writing-mode:horizontal-tb;
+        transform:none;
+        padding: 20px;
+    }
+    .person-initials h1{
+        font-size: 35px;
+        color: #ffffff;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .person-initials h2{
+        font-size: 25px;
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+    .black-container {
+        padding: 10px;
+    }
+    .person-initials h1{
+        font-size: auto;
+    }
+    .person-initials h2{
+        font-size: auto;
+
+    }
+    .white-container {
+        padding-left: 50px;  
+        max-width: 575px;
+        min-width: 400px;
+        margin-top: 2em;
+        margin-bottom: 0em;
+    }
+
+    .contact-container{
+        display: static;
+        position:relative;
+    }
+    .contact-info{
+        margin-left: auto;
+        margin-right: auto;
+        max-width:max-content;
+        
+    }
+
+    .contact-info h2{
+        font-size: 25px;
+        margin-block-start: 0;
+        margin-block-end: 8px;
+    }
+    .contact{
+        display: static;
+        position:relative;
+    }
+}
